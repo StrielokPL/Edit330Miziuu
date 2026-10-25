@@ -1,0 +1,18 @@
+{
+  "editVersion": "0.0.5.1",
+  "baseKingmodsVersion": "1.1.2.0",
+  "baseModDescVersion": "1.1.2.0",
+  "sourceCommit": "f376b83bb31efe11de2c71fa8421c6c6c8e5f362",
+  "baseFiles": 100,
+  "resultFiles": 106,
+  "unchanged": 95,
+  "modified": 5,
+  "added": 6,
+  "deleted": 0,
+  "payloadBytes": 621020,
+  "verified": true,
+  "reconstructedFiles": 106,
+  "contentSha256": "eeaec5859ba87665d4f14e9d717bbe9b228f92c298e3ef6dc703d32a794db47e",
+  "unchangedFilesInPayload": 0,
+  "gameTested": false
+}

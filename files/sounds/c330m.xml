@@ -1,0 +1,92 @@
+
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+
+    <motorized>
+        <sounds>
+            <motor template="engineSmallVintage" file="sounds/30v2_loop.gls" volumeScale="1.8"/>
+            <motor template="indoorCabinRumble" />
+            <gearbox file="sounds/zwolnicev2.ogg" pitchScale="1" volumeScale="5.5" innerRadius="3" outerRadius="10">
+                <volume indoor="0.45" outdoor="0.55">
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="2.0" modifiedValue="0.3" />
+                    <modifier type="SPEED" value="28.0" modifiedValue="1.0" />
+                </volume>
+                <pitch indoor="0.8" outdoor="0.8">
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.2" />
+                    <modifier type="SPEED" value="28.0" modifiedValue="1.0" />
+                </pitch>
+            </gearbox>
+            <airCompressorRun template="brakeCompressorSmall" />
+            <airCompressorStop template="compressedAir"/>
+	        <gearGroupLeverStart file="sounds/gearUp.ogg" volumeScale="1" />
+            <gearGroupLeverEnd file="sounds/gearDown.ogg"      volumeScale="1" />
+        </sounds>
+    </motorized>
+
+    <enterable>
+        <sounds>
+            <rain template="rainInVehicle"  linkNodeOffset="0 2 -1" volumeScale="2">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="40.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="40" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="15" modifiedValue="1" />
+                    <modifier type="SPEED" value="40" modifiedValue="1.0" />
+                </pitch>
+            </rain>
+
+            <hail template="hailInVehicle"  linkNodeOffset="0 2 -1" volumeScale="1.5">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.0" />
+                </pitch>
+            </hail>
+        </sounds>
+    </enterable>
+
+     <lights>
+        <sounds>
+            <toggleLights template="switch01"  />
+            <turnLight template="switchTurnlight"  />
+        </sounds>
+    </lights>
+
+   <attacherJoints>
+        <sounds>
+             <attach template="attach01" file="sounds/detach.ogg" volumeScale="0.7" pitchScale="0.9" supportsReverb="false"/>
+			<detach template="attach01" file="sounds/detach.ogg" volumeScale="0.7" pitchScale="0.8" supportsReverb="false"/>
+            <hydraulic template="hydraulicOpen02" file="sounds/hydraulic.wav" volumeScale="1.7" pitchScale="0.9" supportsReverb="false">
+	        	<volume indoor="0.7" outdoor="0.7"/>
+            </hydraulic>
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="waterSplash01" />
+        </sounds>
+    </drivable>
+
+    <honk>
+        <sound file="sounds/horn.ogg" />
+    </honk>
+</sounds>

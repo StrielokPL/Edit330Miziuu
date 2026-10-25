@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wheel>
+    <brand>LIZARD</brand>
+    <default>
+        <physics radius="0.68" width="0.5" mass="0.232" tireType="mud" frictionScale="2" maxLongStiffness="11" maxLatStiffness="130" maxLatStiffnessLoad="2" />
+        <tire filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.37" isCareWheel="true" tireTrackAtlasIndex="0" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|1" nodeRight="0|2"  />
+    </default>
+    <configurations>
+        <configuration id="wide" >
+            <innerRim filename="Wheels/Wheels.i3d" nodeLeft="2|0" nodeRight="2|1" offset="0.01" scale="1 1 1" mass="0.02" />
+        </configuration>
+        <configuration id="weight" >
+            <additional filename="Wheels/Wheels.i3d" nodeLeft="2|2" nodeRight="2|3" offset="0.01" scale="1 1 1" mass="0.072" />
+        </configuration>
+        <configuration id="wideWeight" >
+            <innerRim   filename="Wheels/Wheels.i3d" nodeLeft="2|0" nodeRight="2|1" offset="0.01" scale="1 1 1" mass="0.02" />
+            <additional filename="Wheels/Wheels.i3d" nodeLeft="2|2" nodeRight="2|3" offset="0.01" scale="1 1 1" mass="0.072" />
+        </configuration>
+        <configuration id="wideWeight2" >
+            <innerRim   filename="Wheels/Wheels.i3d" nodeLeft="2|0" nodeRight="2|1" offset="0.01" scale="1 1 1" mass="0.02" />
+            <additional filename="Wheels/Wheels.i3d" nodeLeft="2|4" nodeRight="2|5" offset="0.01" scale="1 1 1" mass="0.052" />
+        </configuration>		
+		
+    </configurations>
+</wheel>

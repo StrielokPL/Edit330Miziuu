@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "packageType": "file-overlay",
+  "id": "edit330miziuu",
+  "version": "0.0.5.1",
+  "archiveName": "FS25_UrsusC330_330M_4x2.zip",
+  "compatibilityPolicy": "warn-and-confirm",
+  "baseMod": {
+    "kingmodsUrl": "https://www.kingmods.net/en/fs25/mods/63913/ursus-c-330330m",
+    "downloadPage": "https://modsfire.com/4aJ7Ur5T4hNVzE9",
+    "version": "1.1.2.0",
+    "modDescVersion": "1.1.2.0",
+    "compatibleVersions": [],
+    "sha256": "e7ae69046d4cbf6754d78b700d8fc549f49e111b0d0b3fcd095565b003c0ed21",
+    "archiveName": "FS25_UrsusC330_330M_4x2.zip",
+    "contentSha256": "bd0c142200d58b5aa0c1d3079e18cb060cef3c9a48b2dbdf32186e3a6d401d3f",
+    "fileCount": 100
+  },
+  "source": {
+    "repository": "StrielokPL/ursus330fs25",
+    "commit": "f376b83bb31efe11de2c71fa8421c6c6c8e5f362",
+    "runtimeProfile": "c330"
+  },
+  "files": [
+    {
+      "path": "Scripts/C330LiquidBallast.lua",
+      "action": "add",
+      "sha256": "a5313593e72749a2456678155e6fe1cd03bce0da21262783e6ec3e2c8a5e317f",
+      "size": 2975
+    },
+    {
+      "path": "Scripts/C330Runtime.lua",
+      "action": "add",
+      "sha256": "12f43271bc9ab0044ba233f117ed51491e4e7641b4ff2c6f23d10b4f80dbe637",
+      "size": 1882
+    },
+    {
+      "path": "Scripts/C330ShopOrder.lua",
+      "action": "add",
+      "sha256": "c731dc171363790051a28ead7c25abd1c353401b49c52aae4a4964f8a1258a8a",
+      "size": 6404
+    },
+    {
+      "path": "Scripts/C330TransmissionFix.lua",
+      "action": "add",
+      "sha256": "18a663494585fb09035227e9813db9f2e2b8876e9d1c363dc347652b9c2998b2",
+      "size": 18466
+    },
+    {
+      "path": "Scripts/C330TransmissionWorkFix.lua",
+      "action": "add",
+      "sha256": "b8ca0c77df7a665410c44de1a6d7d47f640d18d56c456da6825379c74129e8ba",
+      "size": 19117
+    },
+    {
+      "path": "Wheels/LizardBack.xml",
+      "action": "replace",
+      "sha256": "1a954238c005fbcf4748a7847f8327679f5d4528c246d1ae95f2162e461a22c4",
+      "size": 1576,
+      "baseSha256": "fc625b61e1e4ea5947c3f4041dc1b9ef2c77debaaef067b7cd50e0ba6423ef22"
+    },
+    {
+      "path": "c330m.i3d",
+      "action": "replace",
+      "sha256": "34b3461e43dbb014e5a3ae48e71046f953c769bd98d4ba5669ad139e6d8f080c",
+      "size": 239015,
+      "baseSha256": "4e37d4bc5fb0fb78f715b9198e3c7c11a28df0812d573c431202bdd82dda7452"
+    },
+    {
+      "path": "c330m.xml",
+      "action": "replace",
+      "sha256": "04d85616523bef988749f1c20814c426bbbd988ec35b56bc5740d2f294e9f228",
+      "size": 241529,
+      "baseSha256": "024099bcd50c8d3d122b62cf5ea202d8fd2d055f23759b824636062cfd855faa"
+    },
+    {
+      "path": "modDesc.xml",
+      "action": "replace",
+      "sha256": "027883a4ec1b6c5128a5a9fb2d8110824363716d86c9345b790775b4b49abdb2",
+      "size": 18792,
+      "baseSha256": "c2a319ae2543b169f75a0fcbb27b4e34206c489d24498b6a573740d6e93ba519"
+    },
+    {
+      "path": "sounds/c330m.xml",
+      "action": "replace",
+      "sha256": "488a8e9cde2d47611255161a37d8f59faa4c2a1a03338046075b6a0d00f5ddf6",
+      "size": 4145,
+      "baseSha256": "243f0f8d6a792bc12304f94624e50dd31ffe728b5d5f7a3913c87b84bc8e4d26"
+    },
+    {
+      "path": "sounds/zwolnicev2.ogg",
+      "action": "add",
+      "sha256": "3ceac9882b04e733c3b86d3ed530b1c96103e88da14884d728227a85dc80906f",
+      "size": 67119
+    }
+  ],
+  "delete": [],
+  "result": {
+    "modDescVersion": "0.0.5.1",
+    "fileCount": 106,
+    "contentSha256": "eeaec5859ba87665d4f14e9d717bbe9b228f92c298e3ef6dc703d32a794db47e"
+  },
+  "validation": {
+    "reconstruction": "exact-source-match",
+    "gameTested": false
+  }
+}

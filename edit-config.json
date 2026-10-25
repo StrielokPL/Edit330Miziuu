@@ -1,0 +1,14 @@
+{
+  "id": "edit330miziuu",
+  "sourceRepository": "StrielokPL/ursus330fs25",
+  "runtimeProfile": "c330",
+  "archiveName": "FS25_UrsusC330_330M_4x2.zip",
+  "baseMod": {
+    "kingmodsUrl": "https://www.kingmods.net/en/fs25/mods/63913/ursus-c-330330m",
+    "downloadPage": "https://modsfire.com/4aJ7Ur5T4hNVzE9",
+    "version": "1.1.2.0",
+    "modDescVersion": "1.1.2.0",
+    "compatibleVersions": [],
+    "sha256": "e7ae69046d4cbf6754d78b700d8fc549f49e111b0d0b3fcd095565b003c0ed21"
+  }
+}

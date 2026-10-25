@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="100">
+    <author>StrielokPL, Speedy, Miziuu</author>
+    <version>0.0.5.1</version>
+    <title>
+        <en>Ursus C-330/330M</en>
+    </title>
+    <description>
+        <en>
+            <![CDATA[C330M The tractor has the following information:
+Base Price: 15500 $
+Power: 30 hp
+Top Speed: up to 26.3 kph
+
+Configurations:
+- Tires
+- Front weights
+- Cabin
+- Mudflaps
+- Front fenders
+- Wheels weights
+- Colors (engine, the color of the hood and fenders, rims, front grille)
+- Stickers (black, silver)
+
+
+]]>
+        </en>
+        <de>
+            <![CDATA[C330M Der Traktor verfügt über die folgenden Informationen.
+Grundpreis: 15500 €
+Leistung: 30 PS
+Höchstgeschwindigkeit: bis 26,3 km/h
+
+Konfigurationen:
+- Reifen
+- Frontgewicht
+- Kabine
+- Schmutzfänger
+- Kotflügel vorne
+- Radgewichte
+- Farben (Motor, Motorhaube, Kotflügel, Felgen, Frontgrill)
+- Aufkleber (schwarz, silber)
+
+
+]]>
+</de>
+        <fr><![CDATA[C330M Le tracteur dispose des informations suivantes.
+Prix de base: 15500 €
+Pouvoir: 30 cv
+Vitesse de pointe: jusqu’à 26,3 km/h
+
+Configurations:
+- Pneus
+- Masses avant
+- Cabine
+- Garde-boues
+- Ailes avant
+- Poids des roues
+- Couleurs (moteur, couleur du capot et des ailes, jantes, calandre)
+- Autocollants (noir, argent)
+
+
+]]>
+</fr>
+    </description>
+    <iconFilename>icon_c330m.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <!-- C-330 stable drivetrain + inherited C-330M calibration test + shared shop ordering. -->
+    <extraSourceFiles>
+        <sourceFile filename="Scripts/C330Runtime.lua" />
+        <sourceFile filename="Scripts/C330LiquidBallast.lua" />
+        <sourceFile filename="Scripts/C330ShopOrder.lua" />
+        <sourceFile filename="Scripts/C330TransmissionFix.lua" />
+    </extraSourceFiles>
+
+    <storeItems>
+        <storeItem xmlFilename="c330m.xml" />
+    </storeItems>
+	
+    <specializations>
+        <specialization name="moreDesignConfigs" className="MoreDesignConfigs" filename="Scripts/MoreDesignConfigs.lua"/>   
+    </specializations>
+
+	<vehicleTypes>	
+		<type name="ursus" parent="tractor" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">			
+			<specialization name="moreDesignConfigs"/>		
+		</type>	
+	</vehicleTypes>	
+	
+	<l10n>
+		<text name="Cabin">
+			<en>Cabin</en>
+			<pl>Kabina</pl>
+			<de>Kabine</de>
+			<fr>Cabine</fr>
+		</text>
+		<text name="Grille">
+			<en>Grille</en>
+			<pl>Kratka</pl>
+			<de>Gitter</de>
+			<fr>Grille</fr>
+		</text>
+		<text name="Old">
+			<en>Old</en>
+			<pl>Stara</pl>
+			<de>Alt</de>
+			<fr>Vieux</fr>
+		</text>
+		<text name="New">
+			<en>New</en>
+			<pl>Nowa</pl>
+			<de>Neu</de>
+			<fr>Nouveau</fr>
+		</text>
+		<text name="FrontWeight">
+			<en>Front Weight</en>
+			<pl>Przedni Obciążnik</pl>
+			<de>Frontgewicht</de>
+			<fr>Poids avant</fr>
+		</text>
+		<text name="BackWeights">
+			<en>Wheels Weights</en>
+			<pl>Obciążniki Kół</pl>
+			<de>Reifengewichte</de>
+			<fr>Roues poids</fr>
+		</text>
+		<text name="Small">
+			<en>Small</en>
+			<pl>Małe</pl>
+			<de>Klein</de>
+			<fr>Petit</fr>
+		</text>
+		<text name="Big">
+			<en>Big</en>
+			<pl>Duże</pl>
+			<de>Groß</de>
+			<fr>Grand</fr>
+		</text>
+		<text name="Both">
+			<en>Both</en>
+			<pl>Oba</pl>
+			<de>Beide</de>
+			<fr>Les deux</fr>
+		</text>
+		<text name="MudFlaps">
+			<en>Mud flaps</en>
+			<pl>Chlapacze</pl>
+			<de>Schmutzfänger</de>
+			<fr>Garde-Boue</fr>
+		</text>
+		<text name="Back">
+			<en>Back</en>
+			<pl>Tył</pl>
+			<de>Hinten</de>
+			<fr>Dos</fr>
+		</text>
+		<text name="Front">
+			<en>Front</en>
+			<pl>Przód</pl>
+			<de>Vorne</de>
+			<fr>Devant</fr>
+		</text>
+		<text name="TogetherMudFlaps">
+			<en>Both</en>
+			<pl>Oba</pl>
+			<de>Beide</de>
+			<fr>Les deux</fr>
+		</text>
+		<text name="Fenders">
+			<en>Fenders</en>
+			<pl>Błotniki</pl>
+			<de>Kotflügel</de>
+			<fr>Ailes</fr>
+		</text>
+		<text name="Stickers">
+			<en>Decals</en>
+			<pl>Naklejki</pl>
+			<de>Aufkleber</de>
+			<fr>Décalcomanies</fr>
+		</text>
+		<text name="silver">
+			<en>Silver</en>
+			<pl>Srebrne</pl>
+			<de>Silber</de>
+			<fr>Argent</fr>
+		</text>
+		<text name="Koja">
+			<en>Cabin Koja</en>
+			<pl>Kabina Koja</pl>
+			<de>Kabine Koja</de>
+			<fr>Cabine Koja</fr>
+		</text>
+		<text name="Zamosc">
+			<en>Cabin Zamosc</en>
+			<pl>Kabina Zamość</pl>
+			<de>Kabine Zamosc</de>
+			<fr>Cabine Zamosc</fr>
+		</text>
+		<text name="black">
+			<en>Black</en>
+			<pl>Czarne</pl>
+			<de>Schwarz</de>
+			<fr>Noir</fr>
+		</text>
+		<text name="Yellow">
+			<en>Yellow</en>
+			<pl>Zółty</pl>
+			<de>Gelb</de>
+			<fr>Jaune</fr>
+		</text>
+		<text name="YellowOld">
+			<en>Yellow Old</en>
+			<pl>Zółty Stary</pl>
+			<de>Gelb Alt</de>
+			<fr>Jaune Vieux</fr>
+		</text>
+		<text name="Red">
+			<en>Red</en>
+			<pl>Czerwony</pl>
+			<de>Rot</de>
+			<fr>Rouge</fr>
+		</text>
+		<text name="RedOld">
+			<en>Red Old</en>
+			<pl>Czerwony Stary</pl>
+			<de>Rot Alt</de>
+			<fr>Rouge Vieux</fr>
+		</text>
+		<text name="Gray">
+          	<en>Gray</en>
+        	<de>Grau</de>
+          	<pl>Szary</pl>
+			<fr>Gris</fr>
+		</text>
+		<text name="GrayOld">
+          	<en>Gray Old</en>
+        	<de>Grau Alt</de>
+          	<pl>Szary Stary</pl>
+			<fr>Gris Vieux</fr>
+		</text>
+		<text name="Black">
+          	<en>Black</en>
+        	<de>Schwarz</de>
+          	<pl>Czarny</pl>
+			<fr>Noir</fr>
+		</text>
+		<text name="BlackOld">
+          	<en>Black Old</en>
+        	<de>Schwarz Alt</de>
+          	<pl>Czarny Stary</pl>
+			<fr>Noir Vieux</fr>
+		</text>
+		<text name="beige">
+          	<en>Beige</en>
+        	<de>Beige</de>
+          	<pl>Kość Słoniowa</pl>
+			<fr>Beige</fr>
+		</text>
+		<text name="beigeOld">
+          	<en>Beige Old</en>
+        	<de>Beige Alt</de>
+          	<pl>Kość Słoniowa Stara</pl>
+			<fr>Beige Vieux</fr>
+		</text>
+		<text name="Sheetcolor">
+          	<en>Sheet Color</en>
+        	<de>Farbtafel</de>
+          	<pl>Kolor Blachy</pl>
+			<fr>Feuille de couleurs</fr>
+		</text>
+		<text name="Engine">
+          	<en>Engine color</en>
+        	<de>Motorfarbe</de>
+          	<pl>Kolor korpusu</pl>
+			<fr>Couleur du moteur</fr>
+		</text>
+		<text name="Rim">
+          	<en>Rim color</en>
+        	<de>Felgenfarbe</de>
+          	<pl>Kolor felg</pl>
+			<fr>Couleur de jante</fr>
+		</text>
+		<text name="Grill">
+          	<en>Front grille color</en>
+        	<de>Farbe des Frontgrills</de>
+          	<pl>Kolor kratki przedniej</pl>
+			<fr>Couleur de la calandre avant</fr>
+		</text>
+        <text name="actionIC_IC">
+	    	<en>Interactive control</en>         
+		    <de>Interactive Control</de>   
+		    <pl>Interactive Control</pl>  		
+            <cz>Interactive Control</cz>
+		</text>
+        <text name="actionIC_MC">        
+	    	<en>Mouse control</en>       
+	    	<de>Maussteuerung</de>    
+		    <pl>Kontrola myszką</pl>  
+            <fr>Contrôle de la souris</fr>
+		</text>
+        <text name="actionIC_Animation">   
+		    <en>Animation</en>    
+		    <de>Animationen</de>   
+		    <pl>Animacja</pl>  
+            <fr>Animation</fr>
+		</text>
+        <text name="actionIC_closeHood">   
+		    <en>Close the hood</en>    
+		    <de>Motorhaube schließen</de>   
+		    <pl>Zamknij maske</pl>  
+            <fr>Fermez le capot</fr>
+		</text>
+        <text name="actionIC_openHood">   
+		    <en>Open the hood</en>    
+		    <de>Motorhaube öffnen</de>   
+		    <pl>Otwórz maske</pl>  
+            <fr>Ouvrez le capot</fr>
+		</text>
+        <text name="actionIC_closeRoof">   
+		    <en>Close the roof</en>    
+		    <de>Dach schließen</de>   
+		    <pl>Zamknij dach</pl>  
+            <fr>Fermez le toit</fr>
+		</text>
+        <text name="actionIC_openRoof">   
+		    <en>Open the roof</en>    
+		    <de>Dach öffnen</de>   
+		    <pl>Otwórz dach</pl>  
+            <fr>Ouvrez le toit</fr>
+		</text>
+        <text name="Triangle">   
+		    <en>Warning Triangle</en>    
+		    <de>Warndreieck</de>   
+		    <pl>Trójkąt Ostrzegawczy</pl>  
+            <fr>Triangle d'avertissement</fr>
+		</text>
+        <text name="Chojnow">   
+		    <en>Tube cabin</en>    
+		    <de>Röhrenkabine</de>   
+		    <pl>Kabina Rurka</pl>  
+            <fr>Cabine tubulaire</fr>
+		</text>
+		<!-- -->
+        <text name="ostrzegawcze">   
+		    <en>Warning Lights</en>    
+		    <de>Warnleuchten</de>   
+		    <pl>Światła Ostrzegawcze</pl>  
+            <fr>Voyants d'avertissement</fr>
+		</text>		
+        <text name="tlumiki">   
+		    <en>Silencer</en>    
+		    <de>Schalldämpfer</de>   
+		    <pl>Tłumik</pl>  
+            <fr>Silencieux</fr>
+		</text>	
+        <text name="sprezarka">   
+		    <en>Compressor</en>    
+		    <de>Kompressor</de>   
+		    <pl>Sprężarka</pl>  
+            <fr>Compresseur</fr>
+		</text>	
+        <text name="ladowanie">   
+		    <en>Charging</en>    
+		    <de>Laden</de>   
+		    <pl>Ładowanie</pl>  
+            <fr>Chargement</fr>
+		</text>	
+        <text name="pradnica">   
+		    <en>Generator</en>    
+		    <de>Gleichstromgenerator</de>   
+		    <pl>Prądnica</pl>  
+            <fr>Dynamo</fr>
+		</text>	
+        <text name="alternator">   
+		    <en>Alternator</en>    
+		    <de>Lichtmaschine</de>   
+		    <pl>Alternator</pl>  
+            <fr>Alternateur</fr>
+		</text>	
+        <text name="rozdzielacz">   
+		    <en>Splitter</en>    
+		    <de>Verteiler</de>   
+		    <pl>Rozdzielacz</pl>  
+            <fr>Distributeur</fr>
+		</text>	
+        <text name="filtr">   
+		    <en>Air Filter</en>    
+		    <de>Luftfilter</de>   
+		    <pl>Filtr Powietrza</pl>  
+            <fr>Filtre à air</fr>
+		</text>	
+        <text name="os_przednia">   
+		    <en>Front Axle</en>    
+		    <de>Vorderachse</de>   
+		    <pl>Oś Przednia</pl>  
+            <fr>Essieu avant</fr>
+		</text>	
+        <text name="dodatki">   
+		    <en>Extras</en>    
+		    <de>Extras</de>   
+		    <pl>Dodatki</pl>  
+            <fr>Extras</fr>
+		</text>	
+        <text name="kable">   
+		    <en>Cables</en>    
+		    <de>Kabel</de>   
+		    <pl>Kable</pl>  
+            <fr>Câbles</fr>
+		</text>		
+        <text name="connectionHoses">
+            <en>Connection Hoses</en>
+            <de>Anschlussschläuche</de>
+            <pl>Przewody przyłączeniowe</pl>
+            <fr>Flexibles de raccordement</fr>
+        </text>
+
+        <text name="odblaski_tyl">   
+		    <en>Rear Reflectors</en>    
+		    <de>Rückstrahler</de>   
+		    <pl>Tylne Odblaski</pl>  
+            <fr>Réflecteurs arrière</fr>
+		</text>	
+        <text name="wszystkie_dodatki">   
+		    <en>All Extras</en>    
+		    <de>Alle Extras</de>   
+		    <pl>Wszystkie Dodatki</pl>  
+            <fr>Tous les extras</fr>
+		</text>	
+        <text name="dodatkowe_oswietlenie">   
+		    <en>Additional Lighting</en>    
+		    <de>Zusätzliche Beleuchtung</de>   
+		    <pl>Dodatkowe Oświetlenie</pl>  
+            <fr>Éclairage supplémentaire</fr>
+		</text>	
+        <text name="conf_kabiny_mat">   
+		    <en>Cabin Color</en>    
+		    <de>Farbe der Kabine</de>   
+		    <pl>Kolor Kabiny</pl>  
+            <fr>Couleur de la cabine</fr>
+		</text>	
+        <text name="conf_drzwi_mat">   
+		    <en>Door Color</en>    
+		    <de>Farbe der Tür</de>   
+		    <pl>Kolor Drzwi</pl>  
+            <fr>Couleur de la porte</fr>
+		</text>	
+        <text name="conf_dach_mat">   
+		    <en>Roof Color</en>    
+		    <de>Farbe des Daches</de>   
+		    <pl>Kolor Dachu</pl>  
+            <fr>Couleur du toit</fr>
+		</text>	
+        <text name="conf_konsola_mat">   
+		    <en>Color of the Loader Console</en>    
+		    <de>Farbe der Laderkonsole</de>   
+		    <pl>Kolor Konsoli Ładowacza</pl>  
+            <fr>Couleur de la console du chargeur</fr>
+		</text>	
+        <text name="conf_blotnikifront_mat">   
+		    <en>Color of Front Fenders</en>    
+		    <de>Farbe der Vorderkotflügel</de>   
+		    <pl>Kolor Przednich Błotników</pl>  
+            <fr>Couleur des ailes avant</fr>
+		</text>	
+        <text name="conf_piasty_mat">   
+		    <en>Color Hub</en>    
+		    <de>Die Farbe der Nabe</de>   
+		    <pl>Kolor Piast</pl>  
+            <fr>La couleur du moyeu</fr>
+		</text>	
+        <text name="Okragly">   
+		    <en>Round</en>    
+		    <de>Rund</de>   
+		    <pl>Okrągły</pl>  
+            <fr>Rond</fr>
+		</text>		
+        <text name="Plaski">   
+		    <en>Flat</en>    
+		    <de>Wohnung</de>   
+		    <pl>Płaski</pl>  
+            <fr>Plat</fr>
+		</text>	
+        <text name="okragla">   
+		    <en>Round</en>    
+		    <de>Rund</de>   
+		    <pl>Okrągła</pl>  
+            <fr>Rond</fr>
+		</text>		
+        <text name="plaska">   
+		    <en>Flat</en>    
+		    <de>Wohnung</de>   
+		    <pl>Płaska</pl>  
+            <fr>Plat</fr>
+		</text>		
+        <text name="Tylko_koja">   
+		    <en>Koja Cabin Only</en>    
+		    <de>Nur Koja-Kabine</de>   
+		    <pl>Tylko Kabina Koja</pl>  
+            <fr>Cabine Koja uniquement</fr>
+		</text>	
+        <text name="skrzynia">   
+		    <en>Box</en>    
+		    <de>Box</de>   
+		    <pl>Skrzynka</pl>  
+            <fr>Boîte</fr>
+		</text>	
+        <text name="kable_odblaski">   
+		    <en>Cables + Reflectors</en>    
+		    <de>Kabel + Reflektoren</de>   
+		    <pl>Kable + Odblaski</pl>  
+            <fr>Câbles + Réflecteurs</fr>
+		</text>	
+        <text name="kable_skrzynka">   
+		    <en>Cables + Box</en>    
+		    <de>Kabel + Box</de>   
+		    <pl>Kable + Skrzynka</pl>  
+            <fr>Câbles + boîte</fr>
+		</text>	
+        <text name="odblaski_skrzynka">   
+		    <en>Reflectors + Box</en>    
+		    <de>Reflektoren + Box</de>   
+		    <pl>Odblaski + Skrzynka</pl>  
+            <fr>Réflecteurs + boîte</fr>
+		</text>		
+		<!-- 1.1.0.0-->
+        <text name="KratkaStaraBezNapisow">   
+		    <en>Old Grille Without Inscriptions</en>    
+		    <de>Alter Kühlergrill ohne Inschriften</de>   
+		    <pl>Kratka Stara Bez Napisów</pl>  
+            <fr>Ancienne grille sans inscription</fr>
+		</text>	
+        <text name="KratkaStarazNapisami">   
+		    <en>Old Grille with Inscriptions</en>    
+		    <de>Alter Kühlergrill mit Inschriften</de>   
+		    <pl>Kratka Stara z Napisami</pl>  
+            <fr>Ancienne grille avec inscriptions</fr>
+		</text>	
+        <text name="KratkaStarazNaklejka">   
+		    <en>Old Grille with Sticker</en>    
+		    <de>Alter Kühlergrill mit Aufkleber</de>   
+		    <pl>Kratka Stara z Naklejką</pl>  
+            <fr>Ancienne grille avec autocollant</fr>
+		</text>	
+        <text name="KratkaNowaBezNapisow">   
+		    <en>Grille New Without Inscription</en>    
+		    <de>Neuer Kühlergrill ohne Aufschrift</de>   
+		    <pl>Kratka Nowa Bez Napisów</pl>  
+            <fr>Nouvelle calandre sans inscription</fr>
+		</text>	
+        <text name="KratkaNowaZNapisami">   
+		    <en>Grille New with Inscriptions</en>    
+		    <de>Neuer Kühlergrill mit Beschriftung</de>   
+		    <pl>Kratka Nowa z Napisami</pl>  
+            <fr>Nouvelle calandre avec inscription</fr>
+		</text>	
+        <text name="KratkaNowazNaklejka">   
+		    <en>Grille New with Sticker</en>    
+		    <de>Kühlergrill Neu mit Aufkleber</de>   
+		    <pl>Kratka Nowa z Naklejką</pl>  
+            <fr>Grille Nouvelle avec autocollant</fr>
+		</text>	
+        <text name="configurationBezKabiny">   
+		    <en>Without Cab</en>    
+		    <de>Ohne Kabine</de>   
+		    <pl>Bez Kabiny</pl>  
+            <fr>Sans cabine</fr>
+		</text>	
+        <text name="typlamptylnych">   
+		    <en>Type of Rear Lamps</en>    
+		    <de>Typ der Rückleuchte</de>   
+		    <pl>Typ Lamp Tylnych</pl>  
+            <fr>Type de feu arrière</fr>
+		</text>	
+        <text name="szperacz">   
+		    <en>Searchlight</en>    
+		    <de>Suchscheinwerfer</de>   
+		    <pl>Szperacz</pl>  
+            <fr>Lumière de recherche</fr>
+		</text>	
+        <text name="typkierownicy">   
+		    <en>Steering wheel type</en>    
+		    <de>Typ des Lenkrads</de>   
+		    <pl>Typ Kierownicy</pl>  
+            <fr>Type de volant</fr>
+		</text>			
+        <text name="dodatkinakierwonicy">   
+		    <en>Add-ons on the wheel</en>    
+		    <de>Add-ons auf dem Rad</de>   
+		    <pl>Dodatki Na Kierwonicy</pl>  
+            <fr>Compléments sur la roue</fr>
+		</text>		
+        <text name="trzyrambezgalki">   
+		    <en>Three-armed Without Knob</en>    
+		    <de>Dreiarmig ohne Knauf</de>   
+		    <pl>Trzyramienna Bez Gałki</pl>  
+            <fr>Trois bras sans bouton</fr>
+		</text>			
+        <text name="trzyramzgalka">   
+		    <en>Three Arms with a Knob</en>    
+		    <de>Drei Arme mit einem Knauf</de>   
+		    <pl>Trzy Ramienna z Gałką</pl>  
+            <fr>Trois bras avec bouton</fr>
+		</text>
+        <text name="dwurambezgalki">   
+		    <en>Two-armed Without Knob</en>    
+		    <de>Zweiarmig ohne Knauf</de>   
+		    <pl>Dwuramienna Bez Gałki</pl>  
+            <fr>Deux bras sans bouton</fr>
+		</text>
+        <text name="dwuramzgalka">   
+		    <en>Two-armed with Knob</en>    
+		    <de>Zweiarmig mit Drehknopf</de>   
+		    <pl>Dwuramienna z Gałką</pl>  
+            <fr>Deux bras avec bouton</fr>
+		</text>
+        <text name="odblaskitylne">   
+		    <en>Rear Reflectors</en>    
+		    <de>Rückstrahler</de>   
+		    <pl>Tylne Odblaski</pl>  
+            <fr>Réflecteurs arrière</fr>
+		</text>		
+        <text name="oslonakabli_mat">   
+		    <en>Color of Cable Protectors</en>    
+		    <de>Farbe der Kabelmäntel</de>   
+		    <pl>Kolor Osłon Kabli</pl>  
+            <fr>Couleur des gaines de câbles</fr>
+		</text>		
+		<text name="CoverConsoleColor">   
+			<en>Front Loader Console Cover Color</en>    
+			<de>Frontlader-Konsolenabdeckung Farbe</de>   
+			<pl>Kolor Osłony Konsoli ładowacza</pl>  
+			<fr>Couleur du couvercle de console de chargeur</fr>
+		</text>
+		<text name="siedzenienablotniku">
+			<en>Fender Bench</en>
+			<de>Kotflügelbank</de>
+			<pl>Ławka na Błotniku</pl>
+			<fr>Banquette de garde-boue</fr>
+		</text>	
+		<text name="lawkablotnikColor">
+			<en>Fender Bench Color</en>
+			<de>Kotflügelbank Farbe</de>
+			<pl>Kolor ławki na błotniku</pl>
+			<fr>Couleur de la banquette de garde-boue</fr>
+		</text>		
+		<text name="Rurka">
+			<en>Straight Pipe</en>
+			<de>Gerades Rohr</de>
+			<pl>Prosta Rura</pl>
+			<fr>Tuyau droit</fr>
+		</text>		
+		<text name="BlaszkaNaOsiPrzedniej">
+			<en>Plate on the Round Front Axle</en>
+			<de>Platte an der runden Vorderachse</de>
+			<pl>Blaszka Na Osi Przedniej Okrągłej</pl>
+			<fr>Plaque sur l'essieu avant rond</fr>
+		</text>
+		<text name="LiquidBallast">
+			<en>Water in rear tyres</en>
+			<pl>Woda w tylnych oponach</pl>
+			<de>Wasser in den Hinterreifen</de>
+			<fr>Eau dans les pneus arrière</fr>
+		</text>
+	</l10n>
+
+    <brands>        
+        <brand name="URSUS" title="Ursus" image="brand_ursus.dds"/>
+        <brand name="Polowe" title="Opony Polowe" image="brand_tire2.dds"/>
+        <brand name="Szosowe" title="Opony Szosowe" image="brand_tire.dds"/>
+    </brands>
+
+</modDesc>
