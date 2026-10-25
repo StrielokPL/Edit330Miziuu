@@ -19,6 +19,8 @@ updatera przy niezgodnej wersji: ostrzeżenie z wyborem kontynuacji lub anulowan
 (`compatibilityPolicy: warn-and-confirm`). Updater wymaga jeszcze obsługi tego
 formatu nakładki; obecna wersja a13 jej nie instaluje.
 
+[Zasady i aktualne oceny zgodności](COMPATIBILITY.md).
+
 ## Zawartość
 
 - `files/` — **5 zmienionych i 6 nowych plików**, ze ścieżkami jak w oryginale.

@@ -12,6 +12,9 @@
     "modDescVersion": "1.1.2.0",
     "compatibleVersions": [],
     "sha256": "e7ae69046d4cbf6754d78b700d8fc549f49e111b0d0b3fcd095565b003c0ed21",
+    "incompatibleVersions": [],
+    "incompatibleFrom": "1.9.1.0",
+    "incompatibilityReason": "Zmienione identyfikatory geometrii: stara scena editu nie pasuje do c330m.i3d.shapes z wersji 1.9.1.0; wykryto też niezgodność materiałów.",
     "archiveName": "FS25_UrsusC330_330M_4x2.zip",
     "contentSha256": "bd0c142200d58b5aa0c1d3079e18cb060cef3c9a48b2dbdf32186e3a6d401d3f",
     "fileCount": 100
